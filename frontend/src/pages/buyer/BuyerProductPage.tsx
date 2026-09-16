@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, MapPin, Package, Clock, ShieldCheck, Mail, Heart, Share2, Copy, Check } from 'lucide-react';
+import { ArrowLeft, MapPin, Package, Clock, ShieldCheck, Mail, Heart, Share2, Copy, Check, ShoppingCart } from 'lucide-react';
 import axios from 'axios';
 import api from '../../lib/api';
 import ProductPassport from '../../components/product/ProductPassport';
 import EnquiryForm from '../../components/buyer/EnquiryForm';
+import BuyNowModal from '../../components/buyer/BuyNowModal';
 import { useTranslation } from 'react-i18next';
 import { useBuyerStore } from '../../stores/buyerStore';
 
@@ -20,6 +21,7 @@ export default function BuyerProductPage() {
     const [error, setError] = useState<string | null>(null);
     const [currentImageIdx, setCurrentImageIdx] = useState(0);
     const [showEnquiryForm, setShowEnquiryForm] = useState(false);
+    const [showBuyNowModal, setShowBuyNowModal] = useState(false);
     const [showShareMenu, setShowShareMenu] = useState(false);
     const [copied, setCopied] = useState(false);
 
@@ -273,8 +275,11 @@ export default function BuyerProductPage() {
             </div>
 
             <div className="fixed bottom-0 left-0 right-0 mobile-shell-width p-4 bg-surface/90 backdrop-blur-md border-t border-outline-variant flex gap-3 z-20">
-                <button onClick={handleEnquiry} className="flex-1 py-3 bg-primary text-on-primary rounded-full font-bold shadow-lg hover:bg-primary/90 flex items-center justify-center gap-2 transition-all">
-                    <Mail className="w-5 h-5" /> Request Enquiry
+                <button onClick={handleEnquiry} className="flex-1 py-3 bg-stone-100 text-stone-700 rounded-full font-bold hover:bg-stone-200 flex items-center justify-center gap-2 transition-all">
+                    <Mail className="w-5 h-5" /> {t('buyer.send_enquiry')}
+                </button>
+                <button onClick={() => setShowBuyNowModal(true)} className="flex-1 py-3 bg-primary text-on-primary rounded-full font-bold shadow-lg hover:bg-primary/90 flex items-center justify-center gap-2 transition-all">
+                    <ShoppingCart className="w-5 h-5" /> {t('buy_now.title')}
                 </button>
             </div>
 
@@ -283,6 +288,15 @@ export default function BuyerProductPage() {
                     productId={product.id} 
                     moq={product.moq || 1} 
                     onClose={() => setShowEnquiryForm(false)} 
+                />
+            )}
+            
+            {showBuyNowModal && (
+                <BuyNowModal 
+                    productId={product.id} 
+                    price={product.price}
+                    stockQuantity={product.stock_quantity}
+                    onClose={() => setShowBuyNowModal(false)}
                 />
             )}
         </div>

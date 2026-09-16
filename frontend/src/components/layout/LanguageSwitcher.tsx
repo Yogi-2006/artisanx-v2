@@ -21,13 +21,13 @@ export function LanguageSwitcher() {
     const languages = [
         { code: 'en', label: 'English' },
         { code: 'ta', label: 'தமிழ்' },
-        { code: 'hi', label: 'हिन्दी' }
-        // { code: 'te', label: 'తెలుగు' },
-        // { code: 'kn', label: 'ಕನ್ನಡ' },
-        // { code: 'ml', label: 'മലയാളം' },
-        // { code: 'bn', label: 'বাংলা' },
-        // { code: 'mr', label: 'मराठी' },
-        // { code: 'ur', label: 'اردو' }
+        { code: 'hi', label: 'हिन्दी' },
+        { code: 'te', label: 'తెలుగు' },
+        { code: 'kn', label: 'ಕನ್ನಡ' },
+        { code: 'ml', label: 'മലയാളം' },
+        { code: 'bn', label: 'বাংলা' },
+        { code: 'mr', label: 'मराठी' },
+        { code: 'ur', label: 'اردو' }
     ];
 
     return (

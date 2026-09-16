@@ -75,7 +75,9 @@
     "re_record": "[mr] Re-record",
     "use_response": "[mr] Use this response",
     "type_instead": "[mr] Type response instead",
-    "voice_failed": "[mr] Voice processing failed. You can try again or type your response."
+    "voice_failed": "[mr] Voice processing failed. You can try again or type your response.",
+    "buyer_message": "कारागिराला संदेश (पर्यायी)",
+    "buyer_message_placeholder": "आपली ओळख करून द्या किंवा प्रश्न विचारा..."
   },
   "facilitator": {
     "dashboard": "Facilitator Dashboard",
@@ -142,7 +144,17 @@
     "location": "[mr] Location",
     "craft_story": "[mr] Craft Story",
     "save_profile": "[mr] Save Profile",
-    "edit_profile": "[mr] Edit Profile"
+    "edit_profile": "[mr] Edit Profile",
+    "my_profile": "माझे प्रोफाईल",
+    "complete_profile": "तुमचे प्रोफाईल पूर्ण करा",
+    "profile_setup": "प्रोफाईल सेटअप",
+    "ph_name": "उदा. जॉन डो",
+    "ph_optional": "पर्यायी",
+    "ph_craft": "उदा. रेशमी साड्या",
+    "ph_location": "शहर, राज्य",
+    "ph_years": "उदा. ५",
+    "ph_capacity": "उदा. ५० वस्तू/महिना",
+    "ph_story": "आम्हाला तुमच्या कलेबद्दल सांगा..."
   },
   "products": {
     "add_product": "[mr] Add Product",
@@ -184,7 +196,17 @@
     "quantity": "[mr] Quantity",
     "budget": "[mr] Budget",
     "deadline": "[mr] Delivery Deadline",
-    "customisation": "[mr] Customisation Request"
+    "customisation": "[mr] Customisation Request",
+    "discover": "कारागिरांची हस्तकला शोधा",
+    "authentic": "थेट निर्मात्यांकडून अस्सल उत्पादने.",
+    "search_ph": "उत्पादने शोधा...",
+    "categories": "श्रेणी",
+    "featured": "वैशिष्ट्यीकृत",
+    "no_products": "अद्याप कोणतीही उत्पादने उपलब्ध नाहीत.",
+    "filters": "फिल्टर्स",
+    "sort_by": "क्रमाने लावा",
+    "newest_first": "नवीन आधी",
+    "no_products_found": "तुमच्या निकषांशी जुळणारे कोणतेही उत्पादन आढळले नाही."
   },
   "common": {
     "loading": "[mr] Loading...",
@@ -201,7 +223,15 @@
     "products": "[mr] Products",
     "enquiries": "[mr] Enquiries",
     "settings": "[mr] Settings",
-    "logout": "[mr] Logout"
+    "logout": "[mr] Logout",
+    "photos": "फोटो",
+    "audio": "ऑडिओ",
+    "pricing": "किंमत",
+    "check_back_later": "नंतर पुन्हा तपासा",
+    "no_image": "प्रतिमा नाही",
+    "enquiry_not_found": "चौकशी आढळली नाही",
+    "status_response": "स्थिती प्रतिसाद",
+    "note_from_artisan": "कारागिराकडून टीप"
   },
   "notifications": {
     "title": "सूचना",
@@ -232,5 +262,82 @@
     "care": "[mr] Care instructions",
     "voice_example": "[mr] Example: You can say 'This is a handmade wooden bottle made from neem wood. It has a natural brown finish, and can be used for storing water...'",
     "type_placeholder": "[mr] Example: Tell us the product name, material, how it is made, size, design and what makes it special..."
+  },
+  "app": {
+    "name": "ArtisanX",
+    "welcome": "ArtisanX मध्ये आपले स्वागत आहे",
+    "tagline": "कारागिरांचे सक्षमीकरण, बाजारांना जोडणे",
+    "get_started": "सुरू करा",
+    "choose_language": "भाषा निवडा"
+  },
+  "passport": {
+    "copied": "कॉपी केले!",
+    "share": "शेअर करा",
+    "enquire": "चौकशी पाठवा",
+    "artisan_story": "कारागिराची कथा",
+    "product_details": "उत्पादनाचा तपशील",
+    "moq": "किमान ऑर्डर",
+    "lead_time": "लागणारा वेळ",
+    "stock": "स्टॉकमध्ये उपलब्ध",
+    "customisation": "कस्टमायझेशन",
+    "yes": "उपलब्ध",
+    "no": "नाही",
+    "materials": "साहित्य",
+    "care": "काळजी घेण्याच्या सूचना",
+    "authenticity": "प्रमाणितता पासपोर्ट",
+    "scan_desc": "या हस्तनिर्मित उत्पादनाची प्रामाणिकता आणि मूळ पडताळण्यासाठी हा QR कोड स्कॅन करा."
+  },
+  "verification": {
+    "self_declared": "स्वयं-घोषित",
+    "facilitator_reviewed": "सुविधाकर्त्याद्वारे पुनरावलोकन केलेले",
+    "cooperative_verified": "सहकारी संस्थेद्वारे सत्यापित",
+    "documentation_pending": "दस्तऐवजीकरण प्रलंबित"
+  },
+  "artisan_home": {
+    "welcome": "स्वागत आहे",
+    "add_product": "नवीन उत्पादन जोडा",
+    "my_products": "माझी उत्पादने",
+    "enquiries": "चौकशी",
+    "total_prod": "एकूण उत्पादने",
+    "pub_prod": "ऑनलाइन लाईव्ह",
+    "pending_enq": "ड्राफ्ट्स",
+    "next_step": "तुमच्या लक्ष देण्याची गरज आहे",
+    "recent_enq": "अलीकडील चौकशी",
+    "profile_incomplete": "प्रोफाईल अपूर्ण आहे",
+    "complete_now": "आता पूर्ण करा",
+    "no_enquiries": "कोणतीही अलीकडील चौकशी नाही",
+    "next_step_desc": "अधिक ग्राहकांना आकर्षित करण्यासाठी तुमच्या नवीनतम कलेचे फोटो अपलोड करा!",
+    "greeting_prefix": "आज तुम्हाला काय करायला आवडेल?",
+    "see_all": "सर्व पहा",
+    "createProduct": "नवीन उत्पादन तयार करा",
+    "listCrafts": "तुमच्या हस्तनिर्मित वस्तू काही मिनिटांत सूचीबद्ध करा",
+    "startCreating": "तयार करणे सुरू करा →",
+    "totalEarnings": "एकूण कमाई",
+    "products": "उत्पादने",
+    "published": "प्रकाशित",
+    "enquiriesHome": "चौकशी",
+    "newRequests": "नवीन विनंत्या",
+    "quickTools": "क्विक टूल्स",
+    "messages": "संदेश",
+    "reviews": "पुनरावलोकने",
+    "analytics": "विश्लेषण",
+    "recentActivity": "अलीकडील हालचाली",
+    "seeAllActivity": "सर्व पहा",
+    "order": "ऑर्डर #",
+    "statusUpdatedTo": "स्थिती अपडेट केली:",
+    "noRecentActivity": "कोणतीही अलीकडील हालचाल नाही",
+    "latestUpdatesAppearHere": "तुमचे नवीनतम अपडेट येथे दिसतील"
+  },
+  "buy_now": {
+    "title": "आत्ताच खरेदी करा",
+    "quantity": "प्रमाण",
+    "total": "एकूण",
+    "notes": "ऑर्डर टीप (पर्यायी)",
+    "notes_placeholder": "कारागिरासाठी कोणत्याही विशिष्ट सूचना जोडा...",
+    "confirm": "खरेदीची पुष्टी करा",
+    "cancel": "रद्द करा",
+    "no_stock_warning": "या उत्पादनासाठी स्टॉक ट्रॅकिंग अद्याप सक्षम केलेले नसल्यामुळे प्रमाण १ वर मर्यादित केले आहे. ही एक ज्ञात मर्यादा आहे ज्याचा टप्पा २३ मध्ये पुन्हा विचार केला जाईल.",
+    "success": "ऑर्डर यशस्वीरीत्या नोंदवली गेली!",
+    "error": "ऑर्डर नोंदवण्यात अयशस्वी"
   }
 }

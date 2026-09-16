@@ -289,6 +289,36 @@
     "no_enquiries": "No recent enquiries",
     "next_step_desc": "Upload photos of your latest craft to attract more buyers!",
     "greeting_prefix": "What would you like to do today?",
-    "see_all": "See all"
+    "see_all": "See all",
+    "createProduct": "Create New Product",
+    "listCrafts": "List your handmade crafts in minutes",
+    "startCreating": "Start Creating →",
+    "totalEarnings": "Total Earnings",
+    "products": "Products",
+    "published": "Published",
+    "enquiriesHome": "Enquiries",
+    "newRequests": "New Requests",
+    "quickTools": "Quick Tools",
+    "messages": "Messages",
+    "reviews": "Reviews",
+    "analytics": "Analytics",
+    "recentActivity": "Recent Activity",
+    "seeAllActivity": "See All",
+    "order": "Order #",
+    "statusUpdatedTo": "Status updated to",
+    "noRecentActivity": "No recent activity",
+    "latestUpdatesAppearHere": "Your latest updates will appear here"
+  },
+  "buy_now": {
+    "title": "Buy Now",
+    "quantity": "Quantity",
+    "total": "Total",
+    "notes": "Order Notes (Optional)",
+    "notes_placeholder": "Add any specific instructions for the artisan...",
+    "confirm": "Confirm Purchase",
+    "cancel": "Cancel",
+    "no_stock_warning": "Quantity is capped at 1 because stock tracking is not yet enabled for this product. This is a known limitation to be revisited in Phase 23.",
+    "success": "Order placed successfully!",
+    "error": "Failed to place order"
   }
 }

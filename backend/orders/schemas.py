@@ -11,3 +11,8 @@ class CancelOrderRequest(BaseModel):
     reason: str
     notes: Optional[str] = None
 
+class DirectOrderCreate(BaseModel):
+    product_id: UUID
+    quantity: int
+    notes: Optional[str] = None
+

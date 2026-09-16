@@ -1,11 +1,17 @@
 from fastapi import APIRouter, Depends, HTTPException
 from auth.dependencies import get_current_user, get_token
 from database import get_authenticated_client
-from .schemas import OrderStatusUpdate, CancelOrderRequest
+from .schemas import OrderStatusUpdate, CancelOrderRequest, DirectOrderCreate
 from datetime import datetime
 from notifications.service import create_notification
+import random
+import string
 
 router = APIRouter(prefix="/orders", tags=["orders"])
+
+def generate_display_id(prefix: str = "AX-ORD"):
+    rand_str = ''.join(random.choices(string.digits, k=5))
+    return f"{prefix}-{rand_str}"
 
 VALID_TRANSITIONS = {
     "confirmed": ["in_production", "cancellation_requested", "cancelled"],
@@ -16,6 +22,81 @@ VALID_TRANSITIONS = {
     "return_requested": ["returned", "disputed"],
     "cancellation_requested": ["cancelled", "in_production"] # Can reject cancellation
 }
+
+@router.post("/direct")
+def create_direct_order(req: DirectOrderCreate, current_user: dict = Depends(get_current_user), token: str = Depends(get_token)):
+    client = get_authenticated_client(token)
+    if current_user.get("role") != "buyer":
+        raise HTTPException(status_code=403, detail="Only buyers can purchase directly")
+        
+    product_res = client.table("products").select("*, artisan_id").eq("id", str(req.product_id)).execute()
+    if not product_res.data:
+        raise HTTPException(status_code=404, detail="Product not found")
+        
+    product = product_res.data[0]
+    
+    if product.get("stock_quantity") is not None and product.get("stock_quantity") < req.quantity:
+        raise HTTPException(status_code=400, detail="Insufficient stock")
+        
+    display_id = generate_display_id("AX-ORD")
+    
+    img_res = client.table("product_images").select("image_url").eq("product_id", str(req.product_id)).order("is_main", desc=True).limit(1).execute()
+    img_url = img_res.data[0]["image_url"] if img_res.data else ""
+    
+    product_snapshot = {
+        "product_id": str(req.product_id),
+        "title": product.get("title", ""),
+        "category": product.get("category", ""),
+        "image_url": img_url,
+        "variant": None,
+        "agreed_unit_price": product["price"],
+        "quantity": req.quantity
+    }
+    
+    order_data = {
+        "display_id": display_id,
+        "quotation_id": None,
+        "enquiry_id": None,
+        "product_id": str(req.product_id),
+        "buyer_id": current_user["id"],
+        "artisan_id": product["artisan_id"],
+        "status": "confirmed",
+        "quantity": req.quantity,
+        "unit_price": product["price"],
+        "total_order_value": float(product["price"] * req.quantity),
+        "customization_details": req.notes,
+        "product_snapshot": product_snapshot,
+        "expected_dispatch_date": None
+    }
+    
+    ord_res = client.table("orders").insert(order_data).execute()
+    if not ord_res.data:
+        raise HTTPException(status_code=500, detail="Failed to create order")
+        
+    order_id = ord_res.data[0]["id"]
+    
+    hist_data = {
+        "order_id": order_id,
+        "from_status": None,
+        "to_status": "confirmed",
+        "changed_by": current_user["id"],
+        "note": "Direct purchase"
+    }
+    client.table("order_status_history").insert(hist_data).execute()
+    
+    create_notification(
+        user_id=product["artisan_id"],
+        type="order_confirmed",
+        title="New Order!",
+        message=f"Buyer placed a direct order for {product.get('title')}. Order {display_id}.",
+        metadata={"order_id": order_id}
+    )
+    
+    if product.get("stock_quantity") is not None:
+        new_stock = product["stock_quantity"] - req.quantity
+        client.table("products").update({"stock_quantity": new_stock}).eq("id", str(req.product_id)).execute()
+        
+    return {"status": "success", "order_id": order_id}
 
 @router.get("/artisan")
 def list_artisan_orders(current_user: dict = Depends(get_current_user), token: str = Depends(get_token)):

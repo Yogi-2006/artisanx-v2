@@ -75,7 +75,9 @@
     "re_record": "[bn] Re-record",
     "use_response": "[bn] Use this response",
     "type_instead": "[bn] Type response instead",
-    "voice_failed": "[bn] Voice processing failed. You can try again or type your response."
+    "voice_failed": "[bn] Voice processing failed. You can try again or type your response.",
+    "buyer_message": "কারুশিল্পীকে বার্তা (ঐচ্ছিক)",
+    "buyer_message_placeholder": "আপনার পরিচয় দিন বা কোনো প্রশ্ন জিজ্ঞাসা করুন..."
   },
   "facilitator": {
     "dashboard": "Facilitator Dashboard",
@@ -142,7 +144,17 @@
     "location": "[bn] Location",
     "craft_story": "[bn] Craft Story",
     "save_profile": "[bn] Save Profile",
-    "edit_profile": "[bn] Edit Profile"
+    "edit_profile": "[bn] Edit Profile",
+    "my_profile": "আমার প্রোফাইল",
+    "complete_profile": "আপনার প্রোফাইল সম্পন্ন করুন",
+    "profile_setup": "প্রোফাইল সেটআপ",
+    "ph_name": "যেমন: জন ডো",
+    "ph_optional": "ঐচ্ছিক",
+    "ph_craft": "যেমন: সিল্ক শাড়ি",
+    "ph_location": "শহর, রাজ্য",
+    "ph_years": "যেমন: ৫",
+    "ph_capacity": "যেমন: মাসে ৫০টি পণ্য",
+    "ph_story": "আপনার কারুশিল্প সম্পর্কে আমাদের বলুন..."
   },
   "products": {
     "add_product": "[bn] Add Product",
@@ -184,7 +196,17 @@
     "quantity": "[bn] Quantity",
     "budget": "[bn] Budget",
     "deadline": "[bn] Delivery Deadline",
-    "customisation": "[bn] Customisation Request"
+    "customisation": "[bn] Customisation Request",
+    "discover": "কারুশিল্পের পণ্য খুঁজুন",
+    "authentic": "সরাসরি নির্মাতাদের কাছ থেকে আসল পণ্য।",
+    "search_ph": "পণ্য খুঁজুন...",
+    "categories": "ক্যাটাগরি",
+    "featured": "বিশেষ ফিচারযুক্ত",
+    "no_products": "এখনও কোনো পণ্য উপলব্ধ নেই।",
+    "filters": "ফিল্টার",
+    "sort_by": "ক্রমানুসারে সাজান",
+    "newest_first": "নতুনগুলো আগে",
+    "no_products_found": "আপনার পছন্দের সাথে মেলে এমন কোনো পণ্য পাওয়া যায়নি।"
   },
   "common": {
     "loading": "[bn] Loading...",
@@ -201,7 +223,15 @@
     "products": "[bn] Products",
     "enquiries": "[bn] Enquiries",
     "settings": "[bn] Settings",
-    "logout": "[bn] Logout"
+    "logout": "[bn] Logout",
+    "photos": "ছবিসমূহ",
+    "audio": "অডিও",
+    "pricing": "মূল্য নির্ধারণ",
+    "check_back_later": "পরে আবার দেখুন",
+    "no_image": "কোনো ছবি নেই",
+    "enquiry_not_found": "অনুসন্ধান পাওয়া যায়নি",
+    "status_response": "স্ট্যাটাস প্রতিক্রিয়া",
+    "note_from_artisan": "কারুশিল্পীর বার্তা"
   },
   "notifications": {
     "title": "বিজ্ঞপ্তি",
@@ -232,5 +262,82 @@
     "care": "[bn] Care instructions",
     "voice_example": "[bn] Example: You can say 'This is a handmade wooden bottle made from neem wood. It has a natural brown finish, and can be used for storing water...'",
     "type_placeholder": "[bn] Example: Tell us the product name, material, how it is made, size, design and what makes it special..."
+  },
+  "app": {
+    "name": "ArtisanX",
+    "welcome": "ArtisanX-এ আপনাকে স্বাগতম",
+    "tagline": "কারুশিল্পীদের ক্ষমতায়ন, বাজারের সাথে সংযোগ",
+    "get_started": "শুরু করুন",
+    "choose_language": "ভাষা নির্বাচন করুন"
+  },
+  "passport": {
+    "copied": "কপি করা হয়েছে!",
+    "share": "শেয়ার করুন",
+    "enquire": "অনুসন্ধান পাঠান",
+    "artisan_story": "কারুশিল্পীর গল্প",
+    "product_details": "পণ্যের বিবরণ",
+    "moq": "সর্বনিম্ন অর্ডার",
+    "lead_time": "প্রস্তুতির সময়",
+    "stock": "স্টক রয়েছে",
+    "customisation": "কাস্টমাইজেশন",
+    "yes": "উপলব্ধ",
+    "no": "না",
+    "materials": "উপাদানসমূহ",
+    "care": "যত্ন নেওয়ার নির্দেশাবলী",
+    "authenticity": "সত্যতার পাসপোর্ট",
+    "scan_desc": "এই হস্তনির্মিত পণ্যটির সত্যতা এবং উৎপত্তি যাচাই করতে এই QR কোডটি স্ক্যান করুন।"
+  },
+  "verification": {
+    "self_declared": "স্বঘোষিত",
+    "facilitator_reviewed": "সহযোগীদের দ্বারা পর্যালোচিত",
+    "cooperative_verified": "সমবায় দ্বারা যাচাইকৃত",
+    "documentation_pending": "নথি জমা অপেক্ষমাণ"
+  },
+  "artisan_home": {
+    "welcome": "স্বাগতম",
+    "add_product": "নতুন পণ্য যোগ করুন",
+    "my_products": "আমার পণ্যসমূহ",
+    "enquiries": "অনুসন্ধানসমূহ",
+    "total_prod": "মোট পণ্য",
+    "pub_prod": "অনলাইনে উপলব্ধ",
+    "pending_enq": "খসড়া",
+    "next_step": "আপনার মনোযোগ প্রয়োজন",
+    "recent_enq": "সাম্প্রতিক অনুসন্ধান",
+    "profile_incomplete": "প্রোফাইল অসম্পূর্ণ",
+    "complete_now": "এখনই সম্পন্ন করুন",
+    "no_enquiries": "কোনো সাম্প্রতিক অনুসন্ধান নেই",
+    "next_step_desc": "আরও ক্রেতাকে আকৃষ্ট করতে আপনার নতুন কারুশিল্পের ছবি আপলোড করুন!",
+    "greeting_prefix": "আজ আপনি কী করতে চান?",
+    "see_all": "সব দেখুন",
+    "createProduct": "নতুন পণ্য তৈরি করুন",
+    "listCrafts": "কয়েক মিনিটের মধ্যে আপনার হস্তনির্মিত পণ্য তালিকাভুক্ত করুন",
+    "startCreating": "তৈরি করা শুরু করুন →",
+    "totalEarnings": "মোট আয়",
+    "products": "পণ্যসমূহ",
+    "published": "প্রকাশিত",
+    "enquiriesHome": "অনুসন্ধানসমূহ",
+    "newRequests": "নতুন অনুরোধ",
+    "quickTools": "দ্রুত সরঞ্জাম",
+    "messages": "বার্তাসমূহ",
+    "reviews": "রিভিউ",
+    "analytics": "অ্যানালিটিক্স",
+    "recentActivity": "সাম্প্রতিক কার্যকলাপ",
+    "seeAllActivity": "সব দেখুন",
+    "order": "অর্ডার #",
+    "statusUpdatedTo": "স্ট্যাটাস আপডেট করা হয়েছে",
+    "noRecentActivity": "কোনো সাম্প্রতিক কার্যকলাপ নেই",
+    "latestUpdatesAppearHere": "আপনার সর্বশেষ আপডেটগুলো এখানে দেখা যাবে"
+  },
+  "buy_now": {
+    "title": "এখনই কিনুন",
+    "quantity": "পরিমাণ",
+    "total": "মোট",
+    "notes": "অর্ডার নোট (ঐচ্ছিক)",
+    "notes_placeholder": "কারিগরের জন্য কোনো নির্দিষ্ট নির্দেশনা থাকলে যোগ করুন...",
+    "confirm": "ক্রয় নিশ্চিত করুন",
+    "cancel": "বাতিল করুন",
+    "no_stock_warning": "এই পণ্যটির জন্য এখনও স্টক ট্র্যাকিং সক্রিয় না থাকায় পরিমাণ ১-এ সীমিত রাখা হয়েছে। এটি একটি পরিচিত সীমাবদ্ধতা যা ফেজ ২৩-এ পুনরায় পর্যালোচনা করা হবে।",
+    "success": "অর্ডার সফলভাবে সম্পন্ন হয়েছে!",
+    "error": "অর্ডার সম্পন্ন করতে ব্যর্থ হয়েছে"
   }
 }

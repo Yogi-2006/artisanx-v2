@@ -75,7 +75,9 @@
     "re_record": "[ml] Re-record",
     "use_response": "[ml] Use this response",
     "type_instead": "[ml] Type response instead",
-    "voice_failed": "[ml] Voice processing failed. You can try again or type your response."
+    "voice_failed": "[ml] Voice processing failed. You can try again or type your response.",
+    "buyer_message": "കരകൗശല വിദഗ്ദ്ധനുള്ള സന്ദേശം (ഓപ്ഷണൽ)",
+    "buyer_message_placeholder": "നിങ്ങളെ പരിചയപ്പെടുത്തുക അല്ലെങ്കിൽ ഒരു ചോദ്യം ചോദിക്കുക..."
   },
   "facilitator": {
     "dashboard": "Facilitator Dashboard",
@@ -142,7 +144,17 @@
     "location": "[ml] Location",
     "craft_story": "[ml] Craft Story",
     "save_profile": "[ml] Save Profile",
-    "edit_profile": "[ml] Edit Profile"
+    "edit_profile": "[ml] Edit Profile",
+    "my_profile": "എന്റെ പ്രൊഫൈൽ",
+    "complete_profile": "നിങ്ങളുടെ പ്രൊഫൈൽ പൂർത്തിയാക്കുക",
+    "profile_setup": "പ്രൊഫൈൽ ക്രമീകരണം",
+    "ph_name": "ഉദാ: ജോൺ ഡോ",
+    "ph_optional": "ഓപ്ഷണൽ",
+    "ph_craft": "ഉദാ: പട്ടുസാരികൾ",
+    "ph_location": "നഗരം, സംസ്ഥാനം",
+    "ph_years": "ഉദാ: 5",
+    "ph_capacity": "ഉദാ: മാസം 50 എണ്ണം",
+    "ph_story": "നിങ്ങളുടെ കരകൗശലത്തെക്കുറിച്ച് പറയൂ..."
   },
   "products": {
     "add_product": "[ml] Add Product",
@@ -184,7 +196,17 @@
     "quantity": "[ml] Quantity",
     "budget": "[ml] Budget",
     "deadline": "[ml] Delivery Deadline",
-    "customisation": "[ml] Customisation Request"
+    "customisation": "[ml] Customisation Request",
+    "discover": "കരകൗശല വസ്തുക്കൾ കണ്ടെത്തൂ",
+    "authentic": "നിർമ്മാതാക്കളിൽ നിന്ന് നേരിട്ടുള്ള ആധികാരിക ഉൽപ്പന്നങ്ങൾ.",
+    "search_ph": "ഉൽപ്പന്നങ്ങൾ തിരയുക...",
+    "categories": "വിഭാഗങ്ങൾ",
+    "featured": "പ്രത്യേകം തിരഞ്ഞെടുക്കപ്പെട്ടവ",
+    "no_products": "ഉൽപ്പന്നങ്ങളൊന്നും ഇതുവരെ ലഭ്യമായിട്ടില്ല.",
+    "filters": "ഫിൽട്ടറുകൾ",
+    "sort_by": "ക്രമീകരിക്കുക",
+    "newest_first": "പുതിയവ ആദ്യം",
+    "no_products_found": "നിങ്ങളുടെ മാനദണ്ഡങ്ങളുമായി പൊരുത്തപ്പെടുന്ന ഉൽപ്പന്നങ്ങളൊന്നും കണ്ടില്ല."
   },
   "common": {
     "loading": "[ml] Loading...",
@@ -201,7 +223,15 @@
     "products": "[ml] Products",
     "enquiries": "[ml] Enquiries",
     "settings": "[ml] Settings",
-    "logout": "[ml] Logout"
+    "logout": "[ml] Logout",
+    "photos": "ഫോട്ടോകൾ",
+    "audio": "ഓഡിയോ",
+    "pricing": "വില വിവരങ്ങൾ",
+    "check_back_later": "പിന്നീട് വീണ്ടും പരിശോധിക്കുക",
+    "no_image": "ചിത്രമില്ല",
+    "enquiry_not_found": "അന്വേഷണം കണ്ടെത്തിയില്ല",
+    "status_response": "സ്റ്റാറ്റസ് മറുപടി",
+    "note_from_artisan": "കരകൗശല വിദഗ്ദ്ധന്റെ കുറിപ്പ്"
   },
   "notifications": {
     "title": "അറിയിപ്പുകൾ",
@@ -232,5 +262,82 @@
     "care": "[ml] Care instructions",
     "voice_example": "[ml] Example: You can say 'This is a handmade wooden bottle made from neem wood. It has a natural brown finish, and can be used for storing water...'",
     "type_placeholder": "[ml] Example: Tell us the product name, material, how it is made, size, design and what makes it special..."
+  },
+  "app": {
+    "name": "ArtisanX",
+    "welcome": "ArtisanX-ലേക്ക് സ്വാഗതം",
+    "tagline": "കരകൗശല വിദഗ്ദ്ധരെ ശാക്തീകരിക്കുന്നു, വിപണികളെ ബന്ധിപ്പിക്കുന്നു",
+    "get_started": "ആരംഭിക്കുക",
+    "choose_language": "ഭാഷ തിരഞ്ഞെടുക്കുക"
+  },
+  "passport": {
+    "copied": "കോപ്പി ചെയ്തു!",
+    "share": "പങ്കുവെക്കുക",
+    "enquire": "അന്വേഷണം അയക്കുക",
+    "artisan_story": "കരകൗശല വിദഗ്ദ്ധന്റെ കഥ",
+    "product_details": "ഉൽപ്പന്ന വിവരങ്ങൾ",
+    "moq": "കുറഞ്ഞ ഓർഡർ",
+    "lead_time": "നിർമ്മാണ സമയം",
+    "stock": "സ്റ്റോക്കുണ്ട്",
+    "customisation": "കസ്റ്റമൈസേഷൻ",
+    "yes": "ലഭ്യമാണ്",
+    "no": "ഇല്ല",
+    "materials": "ഉപയോഗിച്ച വസ്തുക്കൾ",
+    "care": "പരിപാലന നിർദ്ദേശങ്ങൾ",
+    "authenticity": "ആധികാരികതാ പാസ്‌പോർട്ട്",
+    "scan_desc": "ഈ കൈകൊണ്ട് നിർമ്മിച്ച ഉൽപ്പന്നത്തിന്റെ ആധികാരികതയും ഉത്ഭവവും പരിശോധിക്കാൻ ഈ QR കോഡ് സ്കാൻ ചെയ്യുക."
+  },
+  "verification": {
+    "self_declared": "സ്വയം സാക്ഷ്യപ്പെടുത്തിയത്",
+    "facilitator_reviewed": "ഫെസിലിറ്റേറ്റർ പരിശോധിച്ചത്",
+    "cooperative_verified": "സഹകരണ സംഘം സാക്ഷ്യപ്പെടുത്തിയത്",
+    "documentation_pending": "രേഖകൾ ബാക്കിയുണ്ട്"
+  },
+  "artisan_home": {
+    "welcome": "സ്വാഗതം",
+    "add_product": "പുതിയ ഉൽപ്പന്നം ചേർക്കുക",
+    "my_products": "എന്റെ ഉൽപ്പന്നങ്ങൾ",
+    "enquiries": "അന്വേഷണങ്ങൾ",
+    "total_prod": "ആകെ ഉൽപ്പന്നങ്ങൾ",
+    "pub_prod": "ലൈവ് ഓൺലൈൻ",
+    "pending_enq": "ഡ്രാഫ്റ്റുകൾ",
+    "next_step": "നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്",
+    "recent_enq": "സമീപകാല അന്വേഷണങ്ങൾ",
+    "profile_incomplete": "പ്രൊഫൈൽ അപൂർണ്ണമാണ്",
+    "complete_now": "ഇപ്പോൾ പൂർത്തിയാക്കുക",
+    "no_enquiries": "സമീപകാല അന്വേഷണങ്ങൾ ഒന്നുമില്ല",
+    "next_step_desc": "കൂടുതൽ ഉപഭോക്താക്കളെ ആകർഷിക്കാൻ നിങ്ങളുടെ പുതിയ ഉൽപ്പന്നങ്ങളുടെ ഫോട്ടോകൾ അപ്‌ലോഡ് ചെയ്യുക!",
+    "greeting_prefix": "ഇന്ന് താങ്കൾ എന്താണ് ചെയ്യാൻ ആഗ്രഹിക്കുന്നത്?",
+    "see_all": "എല്ലാം കാണുക",
+    "createProduct": "പുതിയ ഉൽപ്പന്നം നിർമ്മിക്കുക",
+    "listCrafts": "നിങ്ങളുടെ കൈകൊണ്ട് നിർമ്മിച്ച ഉൽപ്പന്നങ്ങൾ മിനിറ്റുകൾക്കുള്ളിൽ ലിസ്റ്റ് ചെയ്യുക",
+    "startCreating": "നിർമ്മിക്കാൻ ആരംഭിക്കുക →",
+    "totalEarnings": "ആകെ വരുമാനം",
+    "products": "ഉൽപ്പന്നങ്ങൾ",
+    "published": "പ്രസിദ്ധീകരിച്ചവ",
+    "enquiriesHome": "അന്വേഷണങ്ങൾ",
+    "newRequests": "പുതിയ അഭ്യർത്ഥനകൾ",
+    "quickTools": "ക്വിക്ക് ടൂളുകൾ",
+    "messages": "സന്ദേശങ്ങൾ",
+    "reviews": "അഭിപ്രായങ്ങൾ",
+    "analytics": "അനലിറ്റിക്സ്",
+    "recentActivity": "സമീപകാല പ്രവർത്തനങ്ങൾ",
+    "seeAllActivity": "എല്ലാം കാണുക",
+    "order": "ഓർഡർ #",
+    "statusUpdatedTo": "സ്റ്റാറ്റസ് ഇതിലേക്ക് മാറ്റി:",
+    "noRecentActivity": "സമീപകാല പ്രവർത്തനങ്ങളൊന്നുമില്ല",
+    "latestUpdatesAppearHere": "നിങ്ങളുടെ പുതിയ വിവരങ്ങൾ ഇവിടെ കാണാം"
+  },
+  "buy_now": {
+    "title": "ഇപ്പോൾ വാങ്ങുക",
+    "quantity": "എണ്ണം",
+    "total": "ആകെ",
+    "notes": "ഓർഡർ കുറിപ്പുകൾ (ഐച്ഛികം)",
+    "notes_placeholder": "കലാകാരന് പ്രത്യേക നിർദ്ദേശങ്ങൾ എന്തെങ്കിലും ഉണ്ടെങ്കിൽ ചേർക്കുക...",
+    "confirm": "വാങ്ങൽ സ്ഥിരീകരിക്കുക",
+    "cancel": "റദ്ദാക്കുക",
+    "no_stock_warning": "ഈ ഉൽപ്പന്നത്തിനായി സ്റ്റോക്ക് ട്രാക്കിംഗ് ഇതുവരെ ലഭ്യമാക്കിയിട്ടില്ലാത്തതിനാൽ എണ്ണം 1 ആയി പരിമിതപ്പെടുത്തിയിരിക്കുന്നു. ഘട്ടം 23-ൽ പുനഃപരിശോധിക്കേണ്ട ഒരു പരിമിതിയാണിത്.",
+    "success": "ഓർഡർ വിജയകരമായി നൽകി!",
+    "error": "ഓർഡർ നൽകുന്നതിൽ പരാജയപ്പെട്ടു"
   }
 }

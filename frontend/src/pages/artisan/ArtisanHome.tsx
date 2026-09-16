@@ -103,13 +103,13 @@ export default function ArtisanHome() {
             <div className="absolute -right-12 -top-12 w-48 h-48 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
             
             <div className="flex flex-col gap-1 mb-6 relative z-10">
-              <span className="text-2xl font-extrabold leading-tight tracking-tight">Create New Product</span>
-              <span className="text-sm font-medium text-white/80">List your handmade crafts in minutes</span>
+              <span className="text-2xl font-extrabold leading-tight tracking-tight">{t('artisan_home.createProduct')}</span>
+              <span className="text-sm font-medium text-white/80">{t('artisan_home.listCrafts')}</span>
             </div>
 
             <div className="flex items-center justify-between w-full relative z-10">
               <div className="flex items-center gap-3 bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm">
-                 <span className="text-sm font-bold tracking-wide">Start Creating →</span>
+                 <span className="text-sm font-bold tracking-wide">{t('artisan_home.startCreating')}</span>
               </div>
               <div className="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
                 <span className="material-symbols-outlined text-2xl">add_photo_alternate</span>
@@ -122,7 +122,7 @@ export default function ArtisanHome() {
         <section className="grid grid-cols-2 gap-4">
           <div className="col-span-2 bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-5 flex items-center justify-between shadow-sm cursor-pointer hover:border-primary/30 transition-colors" onClick={() => navigate('/artisan/orders')}>
             <div>
-              <p className="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">Total Earnings</p>
+              <p className="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">{t('artisan_home.totalEarnings')}</p>
               <p className="text-3xl font-black text-on-surface">₹{metrics.orders.total_value.toLocaleString()}</p>
             </div>
             <div className="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center">
@@ -133,42 +133,42 @@ export default function ArtisanHome() {
           <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex flex-col cursor-pointer hover:border-primary/30 transition-colors" onClick={() => navigate('/artisan/products')}>
             <div className="flex items-center gap-2 mb-2">
               <span className="material-symbols-outlined text-on-surface-variant text-lg">inventory_2</span>
-              <span className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Products</span>
+              <span className="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">{t('artisan_home.products')}</span>
             </div>
             <span className="text-3xl font-black text-on-surface leading-none">{metrics.total_products}</span>
-            <span className="text-xs font-medium text-tertiary mt-2">{metrics.published_products} Published</span>
+            <span className="text-xs font-medium text-tertiary mt-2">{metrics.published_products} {t('artisan_home.published')}</span>
           </div>
           
           <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-4 shadow-sm flex flex-col cursor-pointer hover:border-primary/30 transition-colors relative" onClick={() => navigate('/artisan/enquiries')}>
             {metrics.new_enquiries > 0 && <span className="absolute top-3 right-3 w-3 h-3 rounded-full bg-error ring-4 ring-surface-container-lowest animate-pulse"></span>}
             <div className="flex items-center gap-2 mb-2">
               <span className="material-symbols-outlined text-on-surface-variant text-lg">forum</span>
-              <span className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Enquiries</span>
+              <span className="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-1">{t('artisan_home.enquiriesHome')}</span>
             </div>
             <span className="text-3xl font-black text-on-surface leading-none">{metrics.new_enquiries}</span>
-            <span className="text-xs font-medium text-secondary mt-2">New Requests</span>
+            <span className="text-xs font-medium text-secondary mt-2">{t('artisan_home.newRequests')}</span>
           </div>
         </section>
 
         {/* Marketplace Tools */}
         <section className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-1 shadow-sm">
           <div className="flex items-center justify-between p-3 border-b border-outline-variant/20">
-            <span className="text-sm font-bold text-on-surface tracking-wide">Quick Tools</span>
+            <span className="text-sm font-bold text-on-surface tracking-wide">{t('artisan_home.quickTools')}</span>
           </div>
           <div className="grid grid-cols-3 divide-x divide-outline-variant/20">
             <div className="p-4 flex flex-col items-center text-center cursor-pointer hover:bg-surface-container-low transition-colors rounded-bl-2xl" onClick={() => navigate('/artisan/conversations')}>
               <span className="material-symbols-outlined text-primary mb-2 text-2xl">chat</span>
-              <span className="text-[11px] font-bold text-on-surface uppercase tracking-wider">Messages</span>
+              <span className="text-[11px] font-bold text-on-surface uppercase tracking-wider">{t('artisan_home.messages')}</span>
             </div>
             
             <div className="p-4 flex flex-col items-center text-center cursor-pointer hover:bg-surface-container-low transition-colors" onClick={() => navigate('/artisan/reviews')}>
               <span className="material-symbols-outlined text-tertiary mb-2 text-2xl">star_rate</span>
-              <span className="text-[11px] font-bold text-on-surface uppercase tracking-wider">Reviews</span>
+              <span className="text-[11px] font-bold text-on-surface uppercase tracking-wider">{t('artisan_home.reviews')}</span>
             </div>
 
             <div className="p-4 flex flex-col items-center text-center cursor-pointer hover:bg-surface-container-low transition-colors rounded-br-2xl" onClick={() => navigate('/artisan/analytics')}>
               <span className="material-symbols-outlined text-secondary mb-2 text-2xl">insert_chart</span>
-              <span className="text-[11px] font-bold text-on-surface uppercase tracking-wider">Analytics</span>
+              <span className="text-[11px] font-bold text-on-surface uppercase tracking-wider">{t('artisan_home.analytics')}</span>
             </div>
           </div>
         </section>
@@ -176,9 +176,9 @@ export default function ArtisanHome() {
         {/* Recent Activity */}
         <section className="w-full flex flex-col gap-4">
           <div className="flex items-center justify-between px-1">
-            <span className="text-lg font-bold text-on-surface">Recent Activity</span>
+            <span className="text-lg font-bold text-on-surface">{t('artisan_home.recentActivity')}</span>
             <button onClick={() => navigate('/artisan/orders')} className="text-sm font-bold text-primary hover:underline">
-              See All
+              {t('artisan_home.seeAllActivity')}
             </button>
           </div>
           
@@ -191,10 +191,10 @@ export default function ArtisanHome() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-bold text-on-surface text-base truncate">
-                      Order #{activity.orders.display_id}
+                      {t('artisan_home.order')}{activity.orders.display_id}
                     </p>
                     <p className="text-sm font-medium text-on-surface-variant truncate mt-0.5">
-                      Status updated to <span className="text-primary font-bold">{activity.to_status}</span>
+                      {t('artisan_home.statusUpdatedTo')} <span className="text-primary font-bold">{activity.to_status}</span>
                     </p>
                   </div>
                 </div>
@@ -204,8 +204,8 @@ export default function ArtisanHome() {
                 <div className="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-3">
                    <span className="material-symbols-outlined text-on-surface-variant text-2xl">history</span>
                 </div>
-                <p className="text-sm font-bold text-on-surface">No recent activity</p>
-                <p className="text-xs text-on-surface-variant mt-1">Your latest updates will appear here</p>
+                <p className="text-sm font-bold text-on-surface">{t('artisan_home.noRecentActivity')}</p>
+                <p className="text-xs text-on-surface-variant mt-1">{t('artisan_home.latestUpdatesAppearHere')}</p>
               </div>
             )}
           </div>

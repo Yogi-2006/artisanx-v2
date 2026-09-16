@@ -75,7 +75,9 @@
     "re_record": "[ur] Re-record",
     "use_response": "[ur] Use this response",
     "type_instead": "[ur] Type response instead",
-    "voice_failed": "[ur] Voice processing failed. You can try again or type your response."
+    "voice_failed": "[ur] Voice processing failed. You can try again or type your response.",
+    "buyer_message": "دستکار کو پیغام (اختیاری)",
+    "buyer_message_placeholder": "اپنا تعارف کروائیں یا کوئی سوال پوچھیں..."
   },
   "facilitator": {
     "dashboard": "Facilitator Dashboard",
@@ -142,7 +144,17 @@
     "location": "[ur] Location",
     "craft_story": "[ur] Craft Story",
     "save_profile": "[ur] Save Profile",
-    "edit_profile": "[ur] Edit Profile"
+    "edit_profile": "[ur] Edit Profile",
+    "my_profile": "میری پروفائل",
+    "complete_profile": "اپنی پروفائل مکمل کریں",
+    "profile_setup": "پروفائل کی ترتیب",
+    "ph_name": "مثلاً جان ڈو",
+    "ph_optional": "اختیاری",
+    "ph_craft": "مثلاً ریشمی ساڑھیاں",
+    "ph_location": "شہر، ریاست",
+    "ph_years": "مثلاً 5",
+    "ph_capacity": "مثلاً 50 اشیاء/ماہ",
+    "ph_story": "ہمیں اپنے فن کے بارے میں بتائیں..."
   },
   "products": {
     "add_product": "[ur] Add Product",
@@ -184,7 +196,17 @@
     "quantity": "[ur] Quantity",
     "budget": "[ur] Budget",
     "deadline": "[ur] Delivery Deadline",
-    "customisation": "[ur] Customisation Request"
+    "customisation": "[ur] Customisation Request",
+    "discover": "دستکاری دریافت کریں",
+    "authentic": "براہ راست تخلیق کاروں سے اصلی اور مستند مصنوعات۔",
+    "search_ph": "مصنوعات تلاش کریں...",
+    "categories": "زمرہ جات",
+    "featured": "نمایاں",
+    "no_products": "ابھی کوئی مصنوعات دستیاب نہیں ہیں۔",
+    "filters": "فلٹرز",
+    "sort_by": "ترتیب دیں",
+    "newest_first": "تازہ ترین پہلے",
+    "no_products_found": "آپ کے معیار سے مطابقت رکھنے والی کوئی مصنوعات نہیں ملیں۔"
   },
   "common": {
     "loading": "[ur] Loading...",
@@ -201,7 +223,15 @@
     "products": "[ur] Products",
     "enquiries": "[ur] Enquiries",
     "settings": "[ur] Settings",
-    "logout": "[ur] Logout"
+    "logout": "[ur] Logout",
+    "photos": "تصاویر",
+    "audio": "آڈیو",
+    "pricing": "قیمت",
+    "check_back_later": "دوبارہ بعد میں چیک کریں",
+    "no_image": "کوئی تصویر نہیں",
+    "enquiry_not_found": "استفسار نہیں ملا",
+    "status_response": "حیثیت کا جواب",
+    "note_from_artisan": "دستکار کا نوٹ"
   },
   "notifications": {
     "title": "اطلاعات",
@@ -232,5 +262,71 @@
     "care": "[ur] Care instructions",
     "voice_example": "[ur] Example: You can say 'This is a handmade wooden bottle made from neem wood. It has a natural brown finish, and can be used for storing water...'",
     "type_placeholder": "[ur] Example: Tell us the product name, material, how it is made, size, design and what makes it special..."
-  }
+  },
+  "app": {
+    "name": "ArtisanX",
+    "welcome": "ArtisanX میں خوش آمدید",
+    "tagline": "دستکاروں کو بااختیار بنانا، منڈیوں کو جوڑنا",
+    "get_started": "شروع کریں",
+    "choose_language": "زبان منتخب کریں"
+  },
+  "passport": {
+    "copied": "کاپی ہو گیا!",
+    "share": "شیئر کریں",
+    "enquire": "استفسار بھیجیں",
+    "artisan_story": "دستکار کی کہانی",
+    "product_details": "مصنوعات کی تفصیلات",
+    "moq": "کم از کم آرڈر",
+    "lead_time": "ترسیل کا وقت",
+    "stock": "اسٹاک میں موجود",
+    "customisation": "کسٹمائزیشن",
+    "yes": "دستیاب",
+    "no": "نہیں",
+    "materials": "مواد",
+    "care": "دیکھ بھال کی ہدایات",
+    "authenticity": "اصالتی پاسپورٹ",
+    "scan_desc": "اس ہاتھ سے بنی مصنوعات کی اصالت اور ماخذ کی تصدیق کے لیے اس QR کوڈ کو اسکین کریں۔"
+  },
+  "verification": {
+    "self_declared": "خود سے تصدیق شدہ",
+    "facilitator_reviewed": "سہولت کار کے ذریعہ جائزہ لیا گیا",
+    "cooperative_verified": "کوآپریٹو سے تصدیق شدہ",
+    "documentation_pending": "دستاویزات التوا میں ہیں"
+  },
+  "artisan_home": {
+    "welcome": "خوش آمدید",
+    "add_product": "نئی مصنوعات شامل کریں",
+    "my_products": "میری مصنوعات",
+    "enquiries": "استفسارات",
+    "total_prod": "کل مصنوعات",
+    "pub_prod": "لائیو آن لائن",
+    "pending_enq": "مسودے",
+    "next_step": "آپ کی توجہ کی ضرورت ہے",
+    "recent_enq": "حالیہ استفسارات",
+    "profile_incomplete": "پروفائل نامکمل ہے",
+    "complete_now": "ابھی مکمل کریں",
+    "no_enquiries": "کوئی حالیہ استفسار نہیں ہے",
+    "next_step_desc": "زیادہ خریداروں کو متوجہ کرنے کے لیے اپنے تازہ ترین فن کی تصاویر اپ لوڈ کریں!",
+    "greeting_prefix": "آج آپ کیا کرنا چاہیں گے؟",
+    "see_all": "سب دیکھیں",
+    "createProduct": "نئی مصنوعات بنائیں",
+    "listCrafts": "چند منٹوں میں اپنی ہاتھ سے بنی اشیاء کو درج کریں",
+    "startCreating": "بنانا شروع کریں →",
+    "totalEarnings": "کل آمدنی",
+    "products": "مصنوعات",
+    "published": "شائع شدہ",
+    "enquiriesHome": "استفسارات",
+    "newRequests": "نئی درخواستیں",
+    "quickTools": "فوری ٹولز",
+    "messages": "پیغامات",
+    "reviews": "جائزے",
+    "analytics": "تجزیات",
+    "recentActivity": "حالیہ سرگرمی",
+    "seeAllActivity": "سب دیکھیں",
+    "order": "آرڈر #",
+    "statusUpdatedTo": "حیثیت کو اپ ڈیٹ کر دیا گیا",
+    "noRecentActivity": "کوئی حالیہ سرگرمی نہیں ہے",
+    "latestUpdatesAppearHere": "آپ کی تازہ ترین اپ ڈیٹس یہاں ظاہر ہوں گی"
+  },
+  "buy_now": {}
 }

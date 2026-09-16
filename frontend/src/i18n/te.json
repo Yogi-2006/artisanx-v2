@@ -75,7 +75,9 @@
     "re_record": "[te] Re-record",
     "use_response": "[te] Use this response",
     "type_instead": "[te] Type response instead",
-    "voice_failed": "[te] Voice processing failed. You can try again or type your response."
+    "voice_failed": "[te] Voice processing failed. You can try again or type your response.",
+    "buyer_message": "కళాకారుడికి సందేశం (ఐచ్ఛికం)",
+    "buyer_message_placeholder": "మీ గురించి పరిచయం చేసుకోండి లేదా ప్రశ్న అడగండి..."
   },
   "facilitator": {
     "dashboard": "Facilitator Dashboard",
@@ -142,7 +144,17 @@
     "location": "[te] Location",
     "craft_story": "[te] Craft Story",
     "save_profile": "[te] Save Profile",
-    "edit_profile": "[te] Edit Profile"
+    "edit_profile": "[te] Edit Profile",
+    "my_profile": "నా ప్రొఫైల్",
+    "complete_profile": "మీ ప్రొఫైల్‌ను పూర్తి చేయండి",
+    "profile_setup": "ప్రొఫైల్ సెటప్",
+    "ph_name": "ఉదా. జాన్ డో",
+    "ph_optional": "ఐచ్ఛికం",
+    "ph_craft": "ఉదా. పట్టు చీరలు",
+    "ph_location": "నగరం, రాష్ట్రం",
+    "ph_years": "ఉదా. 5",
+    "ph_capacity": "ఉదా. నెలకు 50 వస్తువులు",
+    "ph_story": "మీ కళ గురించి మాకు చెప్పండి..."
   },
   "products": {
     "add_product": "[te] Add Product",
@@ -184,7 +196,17 @@
     "quantity": "[te] Quantity",
     "budget": "[te] Budget",
     "deadline": "[te] Delivery Deadline",
-    "customisation": "[te] Customisation Request"
+    "customisation": "[te] Customisation Request",
+    "discover": "కళాకారుల చేతిపనులను కనుగొనండి",
+    "authentic": "తయారీదారుల నుండి నేరుగా లభించే ప్రామాణికమైన ఉత్పత్తులు.",
+    "search_ph": "ఉత్పత్తులను శోధించండి...",
+    "categories": "కేటగిరీలు",
+    "featured": "ప్రత్యేకమైనవి",
+    "no_products": "ఇంకా ఏ ఉత్పత్తులు అందుబాటులో లేవు.",
+    "filters": "ఫిల్టర్లు",
+    "sort_by": "క్రమబద్ధీకరించు",
+    "newest_first": "కొత్తవి ముందుగా",
+    "no_products_found": "మీ నిబంధనలకు సరిపోలే ఉత్పత్తులు ఏవీ కనుగొనబడలేదు."
   },
   "common": {
     "loading": "[te] Loading...",
@@ -201,7 +223,15 @@
     "products": "[te] Products",
     "enquiries": "[te] Enquiries",
     "settings": "[te] Settings",
-    "logout": "[te] Logout"
+    "logout": "[te] Logout",
+    "photos": "ఫోటోలు",
+    "audio": "ఆడియో",
+    "pricing": "ధరలు",
+    "check_back_later": "తర్వాత మళ్లీ చూడండి",
+    "no_image": "చిత్రం లేదు",
+    "enquiry_not_found": "విచారణ కనుగొనబడలేదు",
+    "status_response": "స్థితి స్పందన",
+    "note_from_artisan": "కళాకారుడి నుండి గమనిక"
   },
   "notifications": {
     "title": "నోటిఫికేషన్‌లు",
@@ -232,5 +262,82 @@
     "care": "[te] Care instructions",
     "voice_example": "[te] Example: You can say 'This is a handmade wooden bottle made from neem wood. It has a natural brown finish, and can be used for storing water...'",
     "type_placeholder": "[te] Example: Tell us the product name, material, how it is made, size, design and what makes it special..."
+  },
+  "app": {
+    "name": "ArtisanX",
+    "welcome": "ArtisanX కు స్వాగతం",
+    "tagline": "చేతివృత్తుల వారిని సాధికార పరచడం, మార్కెట్లను అనుసంధానించడం",
+    "get_started": "ప్రారంభించండి",
+    "choose_language": "భాషను ఎంచుకోండి"
+  },
+  "passport": {
+    "copied": "కాపీ చేయబడింది!",
+    "share": "షేర్ చేయండి",
+    "enquire": "విచారణ పంపండి",
+    "artisan_story": "కళాకారుడి కథ",
+    "product_details": "ఉత్పత్తి వివరాలు",
+    "moq": "కనీస ఆర్డర్",
+    "lead_time": "తయారీ సమయం",
+    "stock": "స్టాక్‌లో ఉంది",
+    "customisation": "అనుకూలీకరణ",
+    "yes": "అందుబాటులో ఉంది",
+    "no": "లేదు",
+    "materials": "సామగ్రి",
+    "care": "సంరక్షణ సూచనలు",
+    "authenticity": "ప్రామాణికత పాస్‌పోర్ట్",
+    "scan_desc": "ఈ చేతివృత్తి ఉత్పత్తి యొక్క ప్రామాణికత మరియు మూలాన్ని నిర్ధారించడానికి ఈ QR కోడ్‌ను స్కాన్ చేయండి."
+  },
+  "verification": {
+    "self_declared": "స్వయంగా ప్రకటించినది",
+    "facilitator_reviewed": "ఫెసిలిటేటర్ సమీక్షించారు",
+    "cooperative_verified": "సహకార సంఘం తనిఖీ చేసింది",
+    "documentation_pending": "డాక్యుమెంటేషన్ పెండింగ్‌లో ఉంది"
+  },
+  "artisan_home": {
+    "welcome": "స్వాగతం",
+    "add_product": "కొత్త ఉత్పత్తిని జోడించండి",
+    "my_products": "నా ఉత్పత్తులు",
+    "enquiries": "విచారణలు",
+    "total_prod": "మొత్తం ఉత్పత్తులు",
+    "pub_prod": "లైవ్ ఆన్‌లైన్",
+    "pending_enq": "డ్రాఫ్ట్‌లు",
+    "next_step": "మీ దృష్టి అవసరం",
+    "recent_enq": "ఇటీవలి విచారణలు",
+    "profile_incomplete": "ప్రొఫైల్ పూర్తి కాలేదు",
+    "complete_now": "ఇప్పుడే పూర్తి చేయండి",
+    "no_enquiries": "ఇటీవలి విచారణలు ఏవీ లేవు",
+    "next_step_desc": "ఎక్కువ మంది కొనుగోలుదారులను ఆకర్షించడానికి మీ తాజా కళాఖండాల ఫోటోలను అప్‌లోడ్ చేయండి!",
+    "greeting_prefix": "ఈరోజు మీరు ఏమి చేయాలనుకుంటున్నారు?",
+    "see_all": "అన్నీ చూడండి",
+    "createProduct": "కొత్త ఉత్పత్తిని సృష్టించండి",
+    "listCrafts": "కొద్ది నిమిషాల్లో మీ చేతివృత్తి ఉత్పత్తులను జాబితా చేయండి",
+    "startCreating": "సృష్టించడం ప్రారంభించండి →",
+    "totalEarnings": "మొత్తం సంపాదన",
+    "products": "ఉత్పత్తులు",
+    "published": "ప్రచురించబడింది",
+    "enquiriesHome": "విచారణలు",
+    "newRequests": "కొత్త అభ్యర్థనలు",
+    "quickTools": "త్వరిత పరికరాలు",
+    "messages": "సందేశాలు",
+    "reviews": "సమీక్షలు",
+    "analytics": "విశ్లేషణలు",
+    "recentActivity": "ఇటీవలి కార్యకలాపాలు",
+    "seeAllActivity": "అన్నీ చూడండి",
+    "order": "ఆర్డర్ #",
+    "statusUpdatedTo": "స్థితి దీనికి అప్‌డేట్ చేయబడింది:",
+    "noRecentActivity": "ఇటీవలి కార్యకలాపాలు ఏవీ లేవు",
+    "latestUpdatesAppearHere": "మీ తాజా నవీకరణలు ఇక్కడ కనిపిస్తాయి"
+  },
+  "buy_now": {
+    "title": "ఇప్పుడే కొనండి",
+    "quantity": "పరిమాణం",
+    "total": "మొత్తం",
+    "notes": "ఆర్డర్ గమనికలు (ఐచ్ఛికం)",
+    "notes_placeholder": "కళాకారుడికి ఏదైనా నిర్దిష్ట సూచనలను జోడించండి...",
+    "confirm": "కొనుగోలును నిర్ధారించండి",
+    "cancel": "రద్దు చేయండి",
+    "no_stock_warning": "ఈ ఉత్పత్తికి ఇంకా స్టాక్ ట్రాకింగ్ ప్రారంభించబడనందున పరిమాణం 1 కి మాత్రమే పరిమితం చేయబడింది. ఇది ఫేజ్ 23 లో మళ్లీ పరిశీలించాల్సిన ఒక పరిమితి.",
+    "success": "ఆర్డర్ విజయవంతంగా చేయబడింది!",
+    "error": "ఆర్డర్ చేయడం విఫలమైంది"
   }
 }

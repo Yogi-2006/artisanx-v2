@@ -75,7 +75,9 @@
     "re_record": "[kn] Re-record",
     "use_response": "[kn] Use this response",
     "type_instead": "[kn] Type response instead",
-    "voice_failed": "[kn] Voice processing failed. You can try again or type your response."
+    "voice_failed": "[kn] Voice processing failed. You can try again or type your response.",
+    "buyer_message": "ಕುಶಲಕರ್ಮಿಗೆ ಸಂದೇಶ (ಐಚ್ಛಿಕ)",
+    "buyer_message_placeholder": "ನಿಮ್ಮನ್ನು ಪರಿಚಯಿಸಿಕೊಳ್ಳಿ ಅಥವಾ ಪ್ರಶ್ನೆಯನ್ನು ಕೇಳಿ..."
   },
   "facilitator": {
     "dashboard": "Facilitator Dashboard",
@@ -142,7 +144,17 @@
     "location": "[kn] Location",
     "craft_story": "[kn] Craft Story",
     "save_profile": "[kn] Save Profile",
-    "edit_profile": "[kn] Edit Profile"
+    "edit_profile": "[kn] Edit Profile",
+    "my_profile": "ನನ್ನ ಪ್ರೊಫೈಲ್",
+    "complete_profile": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಪೂರ್ಣಗೊಳಿಸಿ",
+    "profile_setup": "ಪ್ರೊಫೈಲ್ ಸೆಟಪ್",
+    "ph_name": "ಉದಾ: ಜಾನ್ ಡೋ",
+    "ph_optional": "ಐಚ್ಛಿಕ",
+    "ph_craft": "ಉದಾ: ರೇಷ್ಮೆ ಸೀರೆಗಳು",
+    "ph_location": "ನಗರ, ರಾಜ್ಯ",
+    "ph_years": "ಉದಾ: 5",
+    "ph_capacity": "ಉದಾ: 50 ವಸ್ತುಗಳು/ತಿಂಗಳು",
+    "ph_story": "ನಿಮ್ಮ ಕಲೆಯ ಬಗ್ಗೆ ನಮಗೆ ತಿಳಿಸಿ..."
   },
   "products": {
     "add_product": "[kn] Add Product",
@@ -184,7 +196,17 @@
     "quantity": "[kn] Quantity",
     "budget": "[kn] Budget",
     "deadline": "[kn] Delivery Deadline",
-    "customisation": "[kn] Customisation Request"
+    "customisation": "[kn] Customisation Request",
+    "discover": "ಕುಶಲಕರ್ಮಿಗಳ ಕಲೆಯನ್ನು ಅನ್ವೇಷಿಸಿ",
+    "authentic": "ತಯಾರಕರಿಂದ ನೇರವಾಗಿ ನೈಜ ಉತ್ಪನ್ನಗಳು.",
+    "search_ph": "ಉತ್ಪನ್ನಗಳನ್ನು ಹುಡುಕಿ...",
+    "categories": "ವರ್ಗಗಳು",
+    "featured": "ವಿಶೇಷ",
+    "no_products": "ಇನ್ನೂ ಯಾವುದೇ ಉತ್ಪನ್ನಗಳು ಲಭ್ಯವಿಲ್ಲ.",
+    "filters": "ಫಿಲ್ಟರ್‌ಗಳು",
+    "sort_by": "ಹೀಗೆ ವಿಂಗಡಿಸಿ",
+    "newest_first": "ಇತ್ತೀಚಿನವು ಮೊದಲು",
+    "no_products_found": "ನಿಮ್ಮ ಮಾನದಂಡಕ್ಕೆ ಹೊಂದುವ ಯಾವುದೇ ಉತ್ಪನ್ನಗಳು ಕಂಡುಬಂದಿಲ್ಲ."
   },
   "common": {
     "loading": "[kn] Loading...",
@@ -201,7 +223,15 @@
     "products": "[kn] Products",
     "enquiries": "[kn] Enquiries",
     "settings": "[kn] Settings",
-    "logout": "[kn] Logout"
+    "logout": "[kn] Logout",
+    "photos": "ಫೋಟೋಗಳು",
+    "audio": "ಆಡಿಯೋ",
+    "pricing": "ಬೆಲೆ",
+    "check_back_later": "ನಂತರ ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ",
+    "no_image": "ಚಿತ್ರವಿಲ್ಲ",
+    "enquiry_not_found": "ವಿಚಾರಣೆ ಕಂಡುಬಂದಿಲ್ಲ",
+    "status_response": "ಸ್ಥಿತಿ ಪ್ರತಿಕ್ರಿಯೆ",
+    "note_from_artisan": "ಕುಶಲಕರ್ಮಿಯ ಟಿಪ್ಪಣಿ"
   },
   "notifications": {
     "title": "ಸೂಚನೆಗಳು",
@@ -232,5 +262,82 @@
     "care": "[kn] Care instructions",
     "voice_example": "[kn] Example: You can say 'This is a handmade wooden bottle made from neem wood. It has a natural brown finish, and can be used for storing water...'",
     "type_placeholder": "[kn] Example: Tell us the product name, material, how it is made, size, design and what makes it special..."
+  },
+  "app": {
+    "name": "ArtisanX",
+    "welcome": "ArtisanX ಗೆ ಸುಸ್ವಾಗತ",
+    "tagline": "ಕುಶಲಕರ್ಮಿಗಳ ಸಬಲೀಕರಣ, ಮಾರುಕಟ್ಟೆಗಳ ಜೋಡಣೆ",
+    "get_started": "ಪ್ರಾರಂಭಿಸಿ",
+    "choose_language": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+  },
+  "passport": {
+    "copied": "ನಕಲಿಸಲಾಗಿದೆ!",
+    "share": "ಹಂಚಿಕೊಳ್ಳಿ",
+    "enquire": "ವಿಚಾರಣೆ ಕಳುಹಿಸಿ",
+    "artisan_story": "ಕುಶಲಕರ್ಮಿಯ ಕಥೆ",
+    "product_details": "ಉತ್ಪನ್ನದ ವಿವರಗಳು",
+    "moq": "ಕನಿಷ್ಠ ಆದೇಶ",
+    "lead_time": "ಪೂರೈಕೆ ಸಮಯ",
+    "stock": "ಸ್ಟಾಕ್‌ನಲ್ಲಿದೆ",
+    "customisation": "ಗ್ರಾಹಕೀಕರಣ",
+    "yes": "ಲಭ್ಯವಿದೆ",
+    "no": "ಇಲ್ಲ",
+    "materials": "ಸಾಮಗ್ರಿಗಳು",
+    "care": "ಆರೈಕೆ ಸೂಚನೆಗಳು",
+    "authenticity": "ಅಸಲಿತೆಯ ಪಾಸ್‌ಪೋರ್ಟ್",
+    "scan_desc": "ಈ ಹಸ್ತಚಾಲಿತ ಉತ್ಪನ್ನದ ಅಸಲತೆ ಮತ್ತು ಮೂಲವನ್ನು ಪರಿಶೀಲಿಸಲು ಈ QR ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ."
+  },
+  "verification": {
+    "self_declared": "ಸ್ವಯಂ ಘೋಷಿತ",
+    "facilitator_reviewed": "ಫೆಸಿಲಿಟೇಟರ್‌ರಿಂದ ಪರಿಶೀಲಿಸಲಾಗಿದೆ",
+    "cooperative_verified": "ಸಹಕಾರ ಸಂಘದಿಂದ ಪರಿಶೀಲಿಸಲಾಗಿದೆ",
+    "documentation_pending": "ದಾಖಲೆ ಬಾಕಿ ಇದೆ"
+  },
+  "artisan_home": {
+    "welcome": "ಸ್ವಾಗತ",
+    "add_product": "ಹೊಸ ಉತ್ಪನ್ನ ಸೇರಿಸಿ",
+    "my_products": "ನನ್ನ ಉತ್ಪನ್ನಗಳು",
+    "enquiries": "ವಿಚಾರಣೆಗಳು",
+    "total_prod": "ಒಟ್ಟು ಉತ್ಪನ್ನಗಳು",
+    "pub_prod": "ಲೈವ್ ಆನ್‌ಲೈನ್",
+    "pending_enq": "ಕರಡುಗಳು",
+    "next_step": "ನಿಮ್ಮ ಗಮನ ಅಗತ್ಯವಿದೆ",
+    "recent_enq": "ಇತ್ತೀಚಿನ ವಿಚಾರಣೆಗಳು",
+    "profile_incomplete": "ಪ್ರೊಫೈಲ್ ಅಪೂರ್ಣವಾಗಿದೆ",
+    "complete_now": "ಈಗಲೇ ಪೂರ್ಣಗೊಳಿಸಿ",
+    "no_enquiries": "ಇತ್ತೀಚಿನ ಯಾವುದೇ ವಿಚಾರಣೆಗಳಿಲ್ಲ",
+    "next_step_desc": "ಹೆಚ್ಚು ಗ್ರಾಹಕರನ್ನು ಆಕರ್ಷಿಸಲು ನಿಮ್ಮ ಇತ್ತೀಚಿನ ಕಲಾಕೃತಿಯ ಫೋಟೋಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ!",
+    "greeting_prefix": "ಇಂದು ನೀವು ಏನು ಮಾಡಲು ಬಯಸುತ್ತೀರಿ?",
+    "see_all": "ಎಲ್ಲವನ್ನೂ ನೋಡಿ",
+    "createProduct": "ಹೊಸ ಉತ್ಪನ್ನ ರಚಿಸಿ",
+    "listCrafts": "ನಿಮ್ಮ ಕೈಯಿಂದ ಮಾಡಿದ ಕಲಾಕೃತಿಗಳನ್ನು ಕೆಲವೇ ನಿಮಿಷಗಳಲ್ಲಿ ಪಟ್ಟಿ ಮಾಡಿ",
+    "startCreating": "ರಚಿಸಲು ಪ್ರಾರಂಭಿಸಿ →",
+    "totalEarnings": "ಒಟ್ಟು ಗಳಿಕೆ",
+    "products": "ಉತ್ಪನ್ನಗಳು",
+    "published": "ಪ್ರಕಟಿಸಲಾಗಿದೆ",
+    "enquiriesHome": "ವಿಚಾರಣೆಗಳು",
+    "newRequests": "ಹೊಸ ವಿನಂತಿಗಳು",
+    "quickTools": "ತ್ವರಿತ ಪರಿಕರಗಳು",
+    "messages": "ಸಂದೇಶಗಳು",
+    "reviews": "ವಿಮರ್ಶೆಗಳು",
+    "analytics": "ವಿಶ್ಲೇಷಣೆ",
+    "recentActivity": "ಇತ್ತೀಚಿನ ಚಟುವಟಿಕೆ",
+    "seeAllActivity": "ಎಲ್ಲವನ್ನೂ ನೋಡಿ",
+    "order": "ಆದೇಶ #",
+    "statusUpdatedTo": "ಸ್ಥಿತಿಯನ್ನು ಹೀಗೆ ನವೀಕರಿಸಲಾಗಿದೆ",
+    "noRecentActivity": "ಯಾವುದೇ ಇತ್ತೀಚಿನ ಚಟುವಟಿಕೆ ಇಲ್ಲ",
+    "latestUpdatesAppearHere": "ನಿಮ್ಮ ಇತ್ತೀಚಿನ ನವೀಕರಣಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ"
+  },
+  "buy_now": {
+    "title": "ಈಗಲೇ ಖರೀದಿಸಿ",
+    "quantity": "ಪ್ರಮಾಣ",
+    "total": "ಒಟ್ಟು",
+    "notes": "ಆರ್ಡರ್ ಟಿಪ್ಪಣಿಗಳು (ಐಚ್ಛಿಕ)",
+    "notes_placeholder": "ಕುಶಲಕರ್ಮಿಗೆ ಯಾವುದೇ ನಿರ್ದಿಷ್ಟ ಸೂಚನೆಗಳನ್ನು ಸೇರಿಸಿ...",
+    "confirm": "ಖರೀದಿಯನ್ನು ಖಚಿತಪಡಿಸಿ",
+    "cancel": "ರದ್ದುಗೊಳಿಸಿ",
+    "no_stock_warning": "ಈ ಉತ್ಪನ್ನಕ್ಕೆ ಸ್ಟಾಕ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಇನ್ನೂ ಸಕ್ರಿಯಗೊಳಿಸದಿರುವುದರಿಂದ ಪ್ರಮಾಣವನ್ನು 1 ಕ್ಕೆ ಸೀಮಿತಗೊಳಿಸಲಾಗಿದೆ. ಇದು ಹಂತ 23 ರಲ್ಲಿ ಮರುಪರಿಶೀಲಿಸಬೇಕಾದ ತಿಳಿದಿರುವ ಮಿತಿಯಾಗಿದೆ.",
+    "success": "ಆರ್ಡರ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಮಾಡಲಾಗಿದೆ!",
+    "error": "ಆರ್ಡರ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
   }
 }
